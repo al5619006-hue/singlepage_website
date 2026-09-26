@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Website Keluarga - Mbah Samirun</title>
+
+<!-- KONEKSI ASLI - JANGAN DIHAPUS -->
+<link rel="stylesheet" href="header_text.css"/>
+<link rel="stylesheet" href="blink_header.css"/>
+<link rel="stylesheet" href="blink_footer.css"/>
+<link rel="stylesheet" href="section_text.css"/>
+<link rel="stylesheet" href="section_image_figure.css"/>
+<link rel="stylesheet" href="gradient_section.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Lora:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper: #fdfcf7;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #1e40af;
+  --accent-soft: #dbeafe;
+  --border: #e5e7eb;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Plus Jakarta Sans", system-ui, sans-serif;
+  color:var(--ink);
+  background: #f3f4f6;
+  line-height:1.7;
+}
+/* Background animasi kamu tetap jalan di belakang ini */
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  z-index:-1;
+  /* jika gradient_section.css punya background animasi, ini tidak menimpanya */
+}
+
+/* WRAPPER BARU - ganti 2880px fixed */
+.wrapper{
+  max-width: 820px;
+  margin: 32px auto;
+  background: var(--paper);
+  border: 1px solid var(--border) !important;
+  border-radius: 24px;
+  overflow:hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.05);
+  height:auto !important;
+  min-height: 80vh;
+
+}
+/* Pakai Header Lama */
+header { 
+height: 180px;
+padding-left:25px;
+padding-top:50px;
+}
+
+header .top-label{
+  font-size:14px; letter-spacing:0.2em; font-weight:700;
+  color: var(--accent); text-transform:uppercase;
+  margin-left:38px;
+  font-weight:bold;
+}
+header h1.blink{
+  margin:0;
+  font-family:"Lora", serif;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height:1.1;
+  letter-spacing:-0.02em;
+  color: #ffff00;
+  
+}
+header::after{
+  content:"Silsilah & Kenangan Keluarga Besar";
+  font-size:14px; color: var(--muted); margin-top:4px;
+  margin-left:300px;
+  font-weight:bold;
+}
+
+/* COURSE CONTENT */
+.course{
+  height:auto !important;
+  border:none !important;
+  padding: 32px 36px 48px;
+}
+
+.course h2{
+  font-family:"Lora", serif;
+  font-size: clamp(26px, 4vw, 34px);
+  margin: 8px 0 20px;
+  position:relative;
+  padding-bottom:16px;
+}
+.course h2::after{
+  content:"";
+  position:absolute; left:0; bottom:0;
+  width:56px; height:4px;
+  background: var(--accent);
+  border-radius:99px;
+}
+
+.course h3{
+  font-weight:400;
+  font-size: 17px;
+  line-height:1.85;
+  color:#374151;
+  margin: 18px 0;
+  text-align:justify;
+}
+
+.course h4{
+  font-size:13px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:#ffffff;
+  font-weight:900;
+  margin: 10px 0 28px;
+  text-align:center;
+}
+
+/* FIGURE - tetap pakai class fig1, fig2, foto supaya css lamamu tetap kepakai */
+figure.fig1, figure.fig2, figure.fig3{
+  margin: 28px auto;
+  max-width: 590px;
+  background:#00ffff;
+  padding:10px;
+  border-radius:18px;
+  border:1px solid var(--border);
+ 
+  transition: transform .3s ease;
+}
+figure.fig1:hover, figure.fig2:hover{
+  transform: translateY(-3px);
+}
+img.foto{
+  display:block;
+  width:100%;
+  height:100%;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+/* Badge tahun */
+.timeline{
+  display:flex; gap:12px; flex-wrap:wrap;
+  margin: 24px 0 8px;
+}
+.timeline span{
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding:6px 14px;
+  border-radius:999px;
+  font-size:13px; font-weight:600;
+  margin-left:36px;
+}
+
+.divider{
+  height:1px; background: var(--border);
+  margin: 32px 0;
+}
+
+footer.silsilah-footer{
+  text-align:center;
+  padding: 20px;
+  font-size:18px;
+  color:#ffffff;
+  background:#00ffff;
+  border-top:1px solid var(--border);
+  font-weight:900;
+}
+
+@media(max-width:600px){
+  .wrapper{margin:0; border-radius:0; border:none !important}
+  header, .course{padding-left:20px !important; padding-right:20px !important}
+  .course h3{text-align:left}
+}
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+ 
+    <center><div class="top-label">Arsip Keluarga • Kebumen</div></center>
+    <h1 class="blink">WEBSITE KELUARGA</h1>
+	 <script src="strobe_header.js"></script>
+  </header>
+
+  <section class="course">
+    <div class="timeline">
+      <span>1917 • Lahir di Grenggeng</span>
+      <span>1992 • Wafat di Gunung Mujil</span>
+      <span>Pensiunan Depag Kebumen</span>
+    </div>
+
+    <h2>Mbah Samirun</h2>
+    
+    <h3>
+      Beberapa anggota keluarga, terutama generasi ketiga keluarga besar mbah Samirun barangkali banyak yang tidak tahu mengenai simbah mereka. 
+      Oleh karena itu pada artikel ini saya akan menyampaikan beberapa hal yang mudah-mudahan bisa menambah pemahaman mereka mengenai mbah Samirun.
+    </h3> 
+
+    <figure class="fig1">
+      <img class="foto" src="gambar1.png" alt="Mbah Samirun ketika masih remaja"/>
+    </figure>
+    <h4>Mbah Samirun ketika masih remaja</h4>
+
+    <h3>
+      Mbah Samirun lahir di Grenggeng Kemit pada tahun 1917 dan menghabiskan masa kecilnya di sana. Ketika menginjak usia remaja mbah Samirun aktif di 
+      organisasi Islam Masyumi. Selain giat di organisasi mbah Samirun juga sempat nyantri di pondok pesantren Salafiyah Wonoyoso yang ketika itu diasuh
+      oleh mbah Kyai Nasokha.
+    </h3>
+
+    <figure class="fig2">
+      <img class="foto" src="gambar2.png" alt="Mbah Samirun dan empat sahabatnya"/>
+    </figure>
+    <h4>Mbah Samirun dan empat sahabatnya</h4> 
+
+    <h3>
+      Seperti tersebut di dalam salah satu novel yang ditulis oleh Syaifudin Zuhri (Mentri Agama di era Presiden Sukarno) mbah Samirun 
+      dan sahabatnya mbah Basiran adalah dua orang santri yang sempat bertemu dengan beliau. Kemudian pada masa kejayaan Nahdhotul Ulama, mbah Samirun 
+      aktif di organisasi ini dan sempat menjadi wakil rakyat (anggota DPRD) di daerah Kabupaten Kebumen selama dua periode.
+    </h3> 
+
+    <figure class="fig3">
+      <img class="foto" src="gambar3.png" alt="Mbah Samirun dan empat sahabatnya"/>
+    </figure>
+    <h4>Mbah Samirun dan beberapa sejawatnya</h4>
+	
+    <div class="divider"></div>
+ 
+    <h3>
+      Mbah Samirun meninggal pada tahun 1992 di Dukuh Gunung Mujil / Kelurahan Bumirejo / Kabupaten Kebumen, dengan status sebagai pensiunan pegawai 
+      Kantor Departemen Agama Kabupaten Kebumen. Sementara mbah Samirun putri yaitu mbah Siti Murlingah meninggal pada tahun 2007 di Dukuh Wonoyoso /
+      Kelurahan Bumirejo / Kabupaten Kebumen. Tepatnya di rumah petilasan yaitu di Gg. Walikonang 3 No 9 / RT 03 RW 05.
+    </h3>
+    <h3>
+      Mbah Samirun dimakamkan di makbaroh Dukuh Gunung Mujil, sedangkan mbah Siti Murlingah di makamkan di makbaroh Dukuh Wonoyoso. Kebetulan kedua 
+      Pedukuhan ini terletak berseberangan jadi jarak antara keduanya tidak begitu jauh. Demikian beberapa hal yang bisa saya sampaikan mengenai
+      mbah Samirun almarhum dan mbah Siti Murlingah almarhumah, mudah-mudahan bermanfaat.
+    </h3>
+  </section>
+
+  <footer class="silsilah-footer">
+    <p class="footertext-blink">Ditulis dengan hormat untuk keluarga besar Mbah Samirun<br>
+	Grenggeng - Wonoyoso - Gunung Mujil</p>
+  </footer>
+</div>
+</body>
+</html>
